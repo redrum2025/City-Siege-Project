@@ -30,7 +30,7 @@ jobs:
         
     - name: Build with PyInstaller
       run: |
-        python -m PyInstaller --onefile --windowed --add-data "assets:assets" "CS 89.py"
+        python -m PyInstaller --onefile --windowed "CS 89.py"
         
     - name: Upload artifacts
       uses: actions/upload-artifact@v4
